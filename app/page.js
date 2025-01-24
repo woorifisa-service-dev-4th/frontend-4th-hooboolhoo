@@ -7,5 +7,4 @@ export default function Home() {
     <div>
       <Choice />
     </div>
-  );
 }
