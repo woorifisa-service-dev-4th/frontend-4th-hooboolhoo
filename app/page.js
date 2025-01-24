@@ -1,5 +1,3 @@
-import VsButton from './components/ui/VsButton'
-
 const test = {
   fontSize: 48,
   px : 45, // 가로축 패딩
