@@ -5,6 +5,7 @@ import TigerFront from "./TigerFront";
 import TigerBack from "./TigerBack";
 import TigerTail from "./TigerTail";
 import { useState } from "react";
+import { Button } from "@chakra-ui/react";
 
 const Tiger = () => {
   const [isFront, setIsFront] = useState(true);
