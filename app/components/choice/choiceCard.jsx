@@ -1,8 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function ChoiceCard({ src, category, title, subTitle, borderColor }) {
+export default function ChoiceCard({
+  src,
+  category,
+  title,
+  subTitle,
+  borderColor,
+}) {
   return (
-    <div className={`border-[2px] rounded-lg p-4 hover:shadow-lg transition-shadow cursor-pointer ${borderColor}`}>
+    <div
+      className={`border-[2px] rounded-lg p-4 hover:shadow-lg transition-shadow cursor-pointer ${borderColor}`}
+    >
       <div className="mb-2">
         <div className="flex justify-between">
           <div className="relative w-[120px] h-[120px]">
