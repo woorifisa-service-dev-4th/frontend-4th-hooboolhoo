@@ -3,8 +3,11 @@
 import { useState } from "react";
 import Icon from "@/app/components/icon"; // Icon 컴포넌트 import
 import { Input } from "@chakra-ui/react"; // Chakra UI의 Input 컴포넌트 사용
+import { useRouter } from 'next/navigation'
 
 export default function Header() {
+  const router = useRouter();
+
   const [isSearchOpen, setIsSearchOpen] = useState(false); // 검색 바 토글 상태
   const [searchQuery, setSearchQuery] = useState(""); // 검색 입력 값
 
@@ -26,6 +29,8 @@ export default function Header() {
     }
   };
 
+  
+
   return (
     <header className="text-white p-4 shadow">
       <div className="flex items-center justify-between">
@@ -40,7 +45,9 @@ export default function Header() {
       
         <Icon src="/images/main_logo.svg" alt="Main Logo" size={126} />
         
-        <Icon src="/images/profile.svg" alt="Profile Icon" size={38} className="ml-4" />
+        <Icon src="/images/profile.svg" alt="Profile Icon" size={38} className="ml-4" onClick = {()=>{
+          router.push('/mypage')
+        }}/>
       </div>
 
       {isSearchOpen && (
