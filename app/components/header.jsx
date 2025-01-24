@@ -43,11 +43,9 @@ export default function Header() {
           onClick={toggleSearchBar} // 클릭 시 검색 바 토글
         />
       
-        <Icon src="/images/main_logo.svg" alt="Main Logo" size={126} />
+        <Icon src="/images/main_logo.svg" alt="Main Logo" size={126} onClick = { () => router.push('/') } />
         
-        <Icon src="/images/profile.svg" alt="Profile Icon" size={38} className="ml-4" onClick = {()=>{
-          router.push('/mypage')
-        }}/>
+        <Icon src="/images/profile.svg" alt="Profile Icon" size={38} className="ml-4" onClick = {()=> router.push('/mypage') }/>
       </div>
 
       {isSearchOpen && (
