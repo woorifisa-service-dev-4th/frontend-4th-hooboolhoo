@@ -8,7 +8,6 @@ import { Input } from "@chakra-ui/react";
 import Link from "next/link"; // Link 컴포넌트 추가
 
 export default function Header() {
-  const router = useRouter();
   const [isSearchOpen, setIsSearchOpen] = useState(false); // 검색 바 토글 상태
   const [searchQuery, setSearchQuery] = useState(""); // 검색 입력 값
 
