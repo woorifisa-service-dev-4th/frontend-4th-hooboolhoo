@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ChoiceCard from "./choiceCard";
+import MakerButton from "../test-maker-button/makerButton";
 
 export default function Choice({ src, category, title, subTitle }) {
   const [cards, setCards] = useState([
@@ -10,6 +11,7 @@ export default function Choice({ src, category, title, subTitle }) {
 
   return (
     <div className="grid grid-cols-2 gap-10 m-8">
+      <MakerButton/>
       {cards.map((card, index) => (
         <ChoiceCard
           key={index}
@@ -18,7 +20,7 @@ export default function Choice({ src, category, title, subTitle }) {
           title={card.title}
           subTitle={card.subTitle}
           borderColor={
-            index % 2 === 0 ? "border-[#FFCC00]" : "border-[#FF0000]"
+            index % 2 === 0 ? "border-[#FF0000]" : "border-[#FFCC00]"
           }
         />
       ))}
