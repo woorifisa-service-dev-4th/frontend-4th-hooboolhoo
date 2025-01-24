@@ -1,11 +1,5 @@
-// import { Button } from '@chakra-ui/react'
-import { Button } from '@/components/ui/button'
-import React from 'react'
+import { Button } from "@chakra-ui/react"
 
 const VsButton = () => {
-  return (
-        <Button size= "lg">hi</Button>
-  )
+  return <Button>Button</Button>
 }
-
-export default VsButton
