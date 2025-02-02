@@ -8,8 +8,8 @@ import { Input } from "@chakra-ui/react";
 import Link from "next/link"; // Link 컴포넌트 추가
 
 export default function Header() {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [isSearchOpen, setIsSearchOpen] = useState(false); // 검색 바 토글 상태
+  const [searchQuery, setSearchQuery] = useState(""); // 검색 입력 값
 
   const toggleSearchBar = () => {
     setIsSearchOpen(!isSearchOpen);
@@ -24,6 +24,8 @@ export default function Header() {
       console.log("Searching for:", searchQuery);
     }
   };
+
+  
 
   return (
     <header className="text-white p-4 shadow">
@@ -43,7 +45,7 @@ export default function Header() {
         </Link>
 
         {/* 프로필 아이콘 */}
-        <Link href="/profile">
+        <Link href="/mypage">
           <Icon
             src="/images/profile.svg"
             alt="Profile Icon"

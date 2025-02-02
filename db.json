@@ -1,0 +1,23 @@
+{
+  "posts": [
+    { "id": "1", "title": "a title", "views": 100 },
+    { "id": "2", "title": "another title", "views": 200 }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "gameWhatIMade": [
+    { "gameId": 1, "choice": "left", "result": "짜장" },
+    { "gameId": 2, "choice": "right", "result": "민초" },
+    { "gameId": 3, "choice": "left", "result": "깻잎" }
+  ],
+  "gameWhatIDid": [
+    { "gameId": "1", "img": " " },
+    { "gameId": "2", "img": " " },
+    { "gameId": "3", "img": " " }
+  ]
+}
