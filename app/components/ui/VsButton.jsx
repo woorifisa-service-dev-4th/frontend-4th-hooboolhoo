@@ -2,7 +2,7 @@
 
 import { Button } from "@chakra-ui/react"
 
-const VsButton = ({choice, text, size}) => {
+const VsButton = ({choice, text, size, cardId}) => {
   return (
   <Button
     color = 'black'
