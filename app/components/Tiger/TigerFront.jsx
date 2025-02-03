@@ -22,7 +22,7 @@ const TigerFront = ({children}) => {
       </div>
 
       <div className = { TIGER_BODY_CSS.body_belly }>
-          {children}
+        {children}
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 import React from "react";
 import { TIGER_TAIL_CSS } from "@/app/constants/TIGER_CSS";
 
-const TigerTail = () => {
+const TigerTail = ({onClick}) => {
   return (
     <>
-      <div className="flex">
+      <div className="flex" onClick ={onClick}>
         <div className={TIGER_TAIL_CSS["tail_yellow_row"]}></div>
         <div className={TIGER_TAIL_CSS["tail_brown_row"]}></div>
         <div className={TIGER_TAIL_CSS["tail_yellow_row"]}></div>
