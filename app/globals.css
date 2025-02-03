@@ -14,3 +14,17 @@
 body {
 	font-family: 'BMJUA', sans-serif;
 }
+  /* 컨테이너 */
+.tail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+/* 애니메이션 요소 */
+.animated-element {
+  /* width: 1px; */
+  animation: defaultAnimation 4.8s ease-in-out infinite;
+  transform-origin: center; /* 중심 기준 */
+}

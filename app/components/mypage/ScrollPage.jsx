@@ -8,9 +8,9 @@ async function ScrollPage({ url }) {
   return (
     <VStack>
       <HStack px={5}>
-        {games.map((game) => (
+        {/* {games.map((game) => (
           <div key={game.gameId}></div>
-        ))}
+        ))} */}
       </HStack>
     </VStack>
   );

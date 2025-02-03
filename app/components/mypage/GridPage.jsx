@@ -13,16 +13,16 @@ async function GridPage({url}) {
     templateColumns="repeat(3, 1fr)"
     >
       {
-        games.map((game) =>
-            <GridItem key = {game.gameId}>
-                <VsButton
-                key = {game.gameId}
-                choice = {game.choice} 
-                text = {game.result} 
-                size = {{fontSize : 12, px : 5, py : 5}}
-                />
-            </GridItem>
-        )
+        // games.map((game) =>
+        //     <GridItem key = {game.gameId}>
+        //         <VsButton
+        //         key = {game.gameId}
+        //         choice = {game.choice} 
+        //         text = {game.result} 
+        //         size = {{fontSize : 12, px : 5, py : 5}}
+        //         />
+        //     </GridItem>
+        // )
       }
     </Grid>
   );
